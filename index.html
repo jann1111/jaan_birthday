@@ -184,6 +184,22 @@
     .party-divider .sparkles{width:150px;opacity:.72}
     .party-divider .heartline{width:125px;transform:rotate(7deg)}
 
+    .dress-code{position:relative;display:grid;gap:22px;max-width:720px;margin:18px auto 0;padding:clamp(20px,4vw,30px);background:linear-gradient(145deg,rgba(255,253,253,.96),rgba(232,246,201,.62));border:1.5px solid rgba(239,124,159,.35);border-radius:28px;box-shadow:0 10px 30px rgba(141,35,73,.09);overflow:hidden}
+    .dress-code::before{content:'';position:absolute;right:-80px;top:-95px;width:230px;height:230px;border-radius:50%;background:rgba(255,238,156,.4);filter:blur(5px);pointer-events:none}
+    .dress-code::after{content:'♡';position:absolute;left:18px;bottom:8px;color:rgba(156,219,47,.45);font:700 4.6rem/1 "Caveat",cursive;transform:rotate(-13deg);pointer-events:none}
+    .dress-code-copy,.dress-code-visual{position:relative;z-index:1}
+    .dress-code-kicker{margin:0 0 4px;color:#7e6070;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    .dress-code h2{margin:0;color:var(--wine);font:700 clamp(2.7rem,9vw,4rem)/.95 "Caveat",cursive}
+    .dress-code-intro{margin:10px 0 15px;color:#684959;font-size:.95rem;line-height:1.6}
+    .dress-code-note{margin:14px 0 0;color:var(--wine);font:700 1.45rem/1.1 "Caveat",cursive}
+    .pastel-palette{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none}
+    .pastel-palette li{display:grid;gap:6px;justify-items:center;color:#765466;font-size:.66rem;font-weight:700;text-align:center}
+    .pastel-swatch{display:block;width:100%;aspect-ratio:1;border:3px solid rgba(255,255,255,.92);border-radius:50%;box-shadow:0 4px 12px rgba(106,65,82,.15),0 0 0 1px rgba(141,35,73,.12)}
+    .pastel-swatch.pink{background:#f7cbd6}.pastel-swatch.green{background:#cbdba7}.pastel-swatch.white{background:#fffdf5}.pastel-swatch.yellow{background:#fff1a8}
+    .dress-code-visual{margin:0;border-radius:22px;overflow:hidden;box-shadow:0 11px 25px rgba(111,64,82,.15);transform:rotate(1.2deg);background:#fff}
+    .dress-code-visual img{display:block;width:100%;height:100%;max-height:420px;object-fit:cover;object-position:center}
+    .dress-code-star{position:absolute;z-index:2;right:42%;top:16px;width:42px;pointer-events:none;filter:drop-shadow(0 5px 7px rgba(239,124,159,.16));transform:rotate(12deg)}
+
     .info-grid{display:grid;gap:16px;max-width:720px;margin:18px auto 0}
     .panel{position:relative;background:rgba(255,253,253,.9);border:1.5px solid rgba(232,119,154,.33);box-shadow:0 8px 28px rgba(160,67,99,.07);border-radius:24px;padding:26px 19px;text-align:center;overflow:hidden}
     .panel.green{background:linear-gradient(145deg,rgba(232,246,201,.9),rgba(255,253,253,.94));border-color:rgba(156,219,47,.45)}
@@ -251,10 +267,11 @@
     .heart-burst{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:100}
     .heart-burst span{position:absolute;bottom:-60px;animation:heart-rise var(--life,3.8s) ease-out forwards;opacity:0;will-change:transform,opacity;filter:drop-shadow(0 3px 5px rgba(141,35,73,.16))}
     @keyframes heart-rise{0%{transform:translate(0,0) rotate(-10deg) scale(.5);opacity:0}12%{opacity:1}90%{opacity:.85}100%{transform:translate(var(--drift,20px),-110vh) rotate(45deg) scale(1.2);opacity:0}}
-    @media(min-width:700px){.main{padding:42px 22px 84px}.info-grid{grid-template-columns:1fr 1fr}.panel{padding:30px 26px}}
-    @media(max-width:440px){.intro-bunting-green{width:76vw;left:-18%;top:-58px}.intro-bunting-pink{width:53vw;left:-16%;top:-129px}.intro-disco{right:-17px;top:8%;width:94px}.intro-burst{left:-25%;top:31%;width:190px}.intro-balloons{right:-60px;width:175px}.intro-popper{left:-18px;bottom:2px;width:170px}.intro-hearts{right:1%;bottom:12%;width:95px}.intro-star.one{right:12%;top:25%}.intro-star.two{left:7%;top:19%}.invitation{border-radius:24px;padding-top:165px}.bunting-art{width:76%;top:9px}.disco-art{width:27%;right:2%;top:28px}.headline{margin-top:20px}.hero-scene{height:590px}.united-art-wrap{width:96%}.gift-art{right:-7%;width:34%}.balloons-hearts-art{right:-11%;bottom:5%;width:45%}.cake-name{top:79%}.inv-gold.one{left:-80px}.inv-green.one{right:-175px}.party-divider{height:82px}.party-divider .sparkles{width:105px}.party-divider .heartline{width:88px}.rsvp-panel{border-radius:22px}.choices{gap:8px}.page-star{opacity:.29}.page-hearts{opacity:.18}.page-gold{opacity:.48}}
+    @media(min-width:700px){.main{padding:42px 22px 84px}.dress-code{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:center}.info-grid{grid-template-columns:1fr 1fr}.panel{padding:30px 26px}}
+    @media(max-width:440px){.intro-bunting-green{width:76vw;left:-18%;top:-58px}.intro-bunting-pink{width:53vw;left:-16%;top:-129px}.intro-disco{right:-17px;top:8%;width:94px}.intro-burst{left:-25%;top:31%;width:190px}.intro-balloons{right:-60px;width:175px}.intro-popper{left:-18px;bottom:2px;width:170px}.intro-hearts{right:1%;bottom:12%;width:95px}.intro-star.one{right:12%;top:25%}.intro-star.two{left:7%;top:19%}.invitation{border-radius:24px;padding-top:165px}.bunting-art{width:76%;top:9px}.disco-art{width:27%;right:2%;top:28px}.headline{margin-top:20px}.hero-scene{height:590px}.united-art-wrap{width:96%}.gift-art{right:-7%;width:34%}.balloons-hearts-art{right:-11%;bottom:5%;width:45%}.cake-name{top:79%}.inv-gold.one{left:-80px}.inv-green.one{right:-175px}.party-divider{height:82px}.party-divider .sparkles{width:105px}.party-divider .heartline{width:88px}.dress-code{border-radius:22px;padding:22px 18px}.dress-code-visual{order:-1;transform:rotate(.5deg)}.dress-code-visual img{max-height:360px}.dress-code-star{right:14px;top:44%}.rsvp-panel{border-radius:22px}.choices{gap:8px}.page-star{opacity:.29}.page-hearts{opacity:.18}.page-gold{opacity:.48}}
     @media(max-width:440px){.headline{max-width:345px;margin:0 auto}.hero-scene{height:455px;margin-top:-111px}.hero-scene .join{left:25px;top:27%;width:31%;font-size:1.02rem}.united-art-wrap{left:50%;width:76%}.gift-art{right:-5%;top:7%;width:27%}.balloons-hearts-art{right:-10%;width:36%}.hero-scene+.details-strip{margin-top:30px}}
     @media(max-height:700px){.intro{padding:22px 15px}.sub{margin:8px 0 20px}.envelope-btn{transform:scale(.85);margin:-15px 0}.intro h1{font-size:3.3rem}.tap{margin-top:4px}}
+    .ed-hidden{visibility:hidden}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
   </style>
 </head>
@@ -333,6 +350,24 @@
       <img class="heartline" src="assets/extras/green-hearts.png" alt="" />
       <img class="star" src="assets/extras/glitter-star-pink.png" alt="" />
     </div>
+    <section class="dress-code reveal-section" aria-labelledby="dressCodeTitle">
+      <img class="dress-code-star" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
+      <div class="dress-code-copy">
+        <p class="dress-code-kicker">Pastel party</p>
+        <h2 id="dressCodeTitle">Dress code</h2>
+        <p class="dress-code-intro">Ven con colores pasteles: rosita claro, verde claro, blanco o amarillo claro. Puedes combinarlos como quieras.</p>
+        <ul class="pastel-palette" aria-label="Paleta de colores sugerida">
+          <li><span class="pastel-swatch pink"></span>Rosita</li>
+          <li><span class="pastel-swatch green"></span>Verde</li>
+          <li><span class="pastel-swatch white"></span>Blanco</li>
+          <li><span class="pastel-swatch yellow"></span>Amarillo</li>
+        </ul>
+        <p class="dress-code-note">♡ Tu estilo, pero en versión pastel ♡</p>
+      </div>
+      <figure class="dress-code-visual">
+        <img src="assets/dress-code-inspiration.png" alt="Ideas de outfits en rosita, verde claro, blanco y amarillo pastel" />
+      </figure>
+    </section>
     <div class="info-grid reveal-section">
       <section class="panel" aria-label="Cuenta regresiva para el cumpleaños">
         <img class="panel-deco star-a" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
@@ -402,6 +437,7 @@
   <button class="music-fab" id="musicButton" type="button" aria-label="Reproducir música" aria-pressed="false" hidden>🎵</button>
 
   <script src="config.js"></script>
+  <script src="posiciones.js" onerror="window.POSICIONES={}"></script>
   <script>
     const C=window.INVITACION;if(!C)throw new Error('Falta cargar config.js');const EVENTO=C.evento;const $=id=>document.getElementById(id);const eventDate=new Date(EVENTO.fecha);
     const formatDate=value=>{const d=new Date(value);if(Number.isNaN(d.getTime()))return'Revisa la fecha en config.js';const day=new Intl.DateTimeFormat('es-EC',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'America/Guayaquil'}).format(d);const hour=new Intl.DateTimeFormat('es-EC',{hour:'numeric',minute:'2-digit',hour12:true,timeZone:'America/Guayaquil'}).format(d);return day.charAt(0).toUpperCase()+day.slice(1)+' · '+hour};
@@ -445,6 +481,11 @@
     function burstHearts(){if(!C.decoracion.corazonesAlAbrir||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const n=Math.min(40,Math.max(0,Number(C.decoracion.cantidadCorazones)||0));const figures=['♡','♥','✦','★','●','🎀','✨','💚','🎉'];for(let i=0;i<n;i++){const heart=document.createElement('span');heart.textContent=figures[i%figures.length];heart.style.left=`${4+Math.random()*92}%`;heart.style.color=i%4===0?'var(--green)':i%3===0?'#e8c958':i%2?'var(--red)':'var(--rose)';heart.style.fontSize=`${17+Math.random()*29}px`;heart.style.setProperty('--drift',`${-90+Math.random()*180}px`);heart.style.setProperty('--life',`${3.4+Math.random()*2.2}s`);heart.style.animationDelay=`${Math.random()*.85}s`;$('hearts').appendChild(heart);setTimeout(()=>heart.remove(),6500)}}
     const revealSections=[...document.querySelectorAll('.reveal-section')];if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;entry.target.classList.add('is-visible');observer.unobserve(entry.target)})},{threshold:.12,rootMargin:'0px 0px -5%'});revealSections.forEach(section=>observer.observe(section))}else{revealSections.forEach(section=>section.classList.add('is-visible'))}
     let alreadyOpened=false;$('openEnvelope').addEventListener('click',()=>{if(alreadyOpened)return;alreadyOpened=true;$('openEnvelope').disabled=true;const envelope=$('envelope');const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;const turnDelay=reduced?0:920;envelope.classList.add('turning');$('tapText').textContent='♡ just for you ♡';setTimeout(()=>{envelope.classList.add('opened');$('tapText').textContent='♡ opening your invitation ♡'},turnDelay);setTimeout(burstHearts,turnDelay+(reduced?0:320));if(music.src&&musicConfig.reproducirAlAbrir)music.play().catch(()=>{});const delay=reduced?500:Math.max(3000,Number(C.sobre.mostrarInvitacionMs)||3500);setTimeout(()=>$('intro').classList.add('fade'),Math.max(0,delay-720));setTimeout(()=>{const main=$('main');$('intro').hidden=true;main.hidden=false;window.scrollTo({top:0,behavior:'instant'});requestAnimationFrame(()=>main.classList.add('revealed'))},delay)});
+    /* Posiciones personalizadas (se editan con editar.command y se guardan en posiciones.js). */
+    (function(){const SEL='#intro img,#intro .spark,#main img,#main .page-gold,#main .join,#main .cake-name,#main .united-art-wrap';const mq=matchMedia('(max-width:600px)');const count={};document.querySelectorAll(SEL).forEach(el=>{const key=(el.closest('#intro')?'sobre':'invitacion')+':'+[...el.classList].join('.');count[key]=(count[key]||0)+1;el.dataset.ed=key+'#'+count[key]});
+    window.aplicarPosiciones=function(){const data=((window.POSICIONES||{})[mq.matches?'movil':'pc'])||{};document.querySelectorAll('[data-ed]').forEach(el=>{const d=data[el.dataset.ed],s=el.style;['left','top','right','bottom','width','height','scale','rotate','zIndex'].forEach(p=>s[p]='');el.classList.remove('ed-hidden');if(!d)return;if(d.l!=null){s.left=d.l+'%';s.right='auto'}if(d.t!=null){s.top=d.t+'%';s.bottom='auto'}if(d.w!=null){s.width=d.w+'%';s.height='auto'}if(d.s)s.scale=d.s;if(d.r)s.rotate=d.r+'deg';if(d.z!=null)s.zIndex=d.z;if(d.h)el.classList.add('ed-hidden')})};
+    aplicarPosiciones();mq.addEventListener('change',aplicarPosiciones);
+    if(new URLSearchParams(location.search).has('editar')){const ed=document.createElement('script');ed.src='editor.js';document.body.appendChild(ed)}})();
     function countdown(){const left=eventDate.getTime()-Date.now();if(left<=0){['days','hours','minutes','seconds'].forEach(id=>$(id).textContent='00');return}const secs=Math.floor(left/1000);const parts=[Math.floor(secs/86400),Math.floor(secs%86400/3600),Math.floor(secs%3600/60),secs%60];['days','hours','minutes','seconds'].forEach((id,i)=>$(id).textContent=String(parts[i]).padStart(2,'0'))}countdown();setInterval(countdown,1000);
   </script>
 </body>
