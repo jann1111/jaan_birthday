@@ -9,9 +9,10 @@ window.INVITACION = {
     googleMaps: 'https://maps.app.goo.gl/nzVBqiLS9NMxzr1p9'
   },
   sobre: {
-    titulo: "You've got mail!",
-    subtitulo: 'A very special invitation is waiting...',
-    carta: "You're invited ♡",
+    titulo: "You've got mail! 💌",
+    subtitulo: 'Pssst… te llegó algo de mi parte ♡',
+    carta: 'Para ti ♡',
+    firma: 'Con cariño, Jaan',
     sello: '♥',
     lazo: '🎀',
     mensaje: '♡ toca el sobre para abrir ♡',
