@@ -132,7 +132,6 @@
     .mini-label{display:inline-block;margin-top:75px;padding:7px 14px;border-radius:999px;background:var(--green-soft);color:#55751a;font-weight:700;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;transform:rotate(-2deg)}
     .headline{position:relative;margin:12px auto 3px;max-width:560px}
     .birthday-title-art{display:block;width:100%;height:auto;margin:0 auto;filter:drop-shadow(0 5px 3px rgba(141,35,73,.05))}
-    .headline-text{display:block;color:#f1296d;font:700 clamp(3.7rem,13vw,6.4rem)/.82 "Caveat",cursive;letter-spacing:-.035em;text-shadow:-3px -3px 0 #fff,3px -3px 0 #fff,-3px 3px 0 #fff,3px 3px 0 #fff,0 7px 3px rgba(141,35,73,.08);transform:rotate(-3deg)}
     .join{font:italic clamp(1.25rem,4vw,1.75rem)/1.15 "DM Serif Display",serif;color:var(--ink);margin:30px auto 0;max-width:340px}
     .name{font:700 clamp(4.5rem,17vw,9rem)/.8 "Caveat",cursive;color:var(--wine);margin:22px 0 6px;transform:rotate(-3deg)}
     .cake{position:relative;width:min(78%,350px);height:180px;margin:4px auto 15px}
@@ -335,9 +334,9 @@
       <img class="inv-glitter three" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
       <img class="bunting-art" src="assets/canva/bunting-green-only.png" alt="" aria-hidden="true" />
       <img class="disco-art" src="assets/canva/disco-ball.png" alt="" aria-hidden="true" />
-      <p class="mini-label">You're invited to</p><h1 class="headline" id="inviteTitle"><span class="headline-text">It's my birthday!</span></h1>
+      <p class="mini-label">You're invited to</p><h1 class="headline" id="inviteTitle" aria-label="My Birthday!!"><img class="birthday-title-art" src="assets/canva/my-birthday-title.png" alt="" aria-hidden="true" /></h1>
       <div class="hero-scene">
-        <p class="join">Se viene mi cumple y obvio quiero celebrarlo contigo ♡</p>
+        <p class="join">♡ Se viene mi cumple y obvio quiero celebrarlo contigo ♡</p>
         <img class="spark-burst-art" src="assets/extras/spark-burst.png" alt="" aria-hidden="true" />
         <img class="gift-art" src="assets/canva/gift.png" alt="" aria-hidden="true" />
         <img class="glitter-star-art one" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
@@ -359,7 +358,6 @@
     <section class="dress-code reveal-section" aria-labelledby="dressCodeTitle">
       <img class="dress-code-star" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
       <div class="dress-code-copy">
-        <p class="dress-code-kicker">Pastel party</p>
         <h2 id="dressCodeTitle">Dress code</h2>
         <p class="dress-code-intro">La idea es venir en tonos pastel: rosita, verde, blanco o amarillito. Combínalos como más te guste ♡</p>
         <ul class="pastel-palette" aria-label="Paleta de colores sugerida">
@@ -368,7 +366,6 @@
           <li><span class="pastel-swatch white"></span>Blanco</li>
           <li><span class="pastel-swatch yellow"></span>Amarillo</li>
         </ul>
-        <p class="dress-code-note">♡ Tu estilo, pero en versión pastel ♡</p>
       </div>
       <figure class="dress-code-visual">
         <img src="assets/dress-code-inspiration.png" alt="Ideas de outfits en rosita, verde claro, blanco y amarillo pastel" />
@@ -381,7 +378,7 @@
         <img class="panel-deco star-c" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
         <img class="panel-deco star-d" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
         <img class="panel-deco star-e" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
-        <p class="panel-kicker"></p><h2>Ya casi es el día ♡</h2>
+        <p class="panel-kicker"></p><h2>Ya casi es el día</h2>
         <div class="countdown" id="countdown" aria-live="off"><div class="timebox"><span class="num" id="days">--</span><span class="unit">días</span></div><div class="timebox"><span class="num" id="hours">--</span><span class="unit">horas</span></div><div class="timebox"><span class="num" id="minutes">--</span><span class="unit">min</span></div><div class="timebox"><span class="num" id="seconds">--</span><span class="unit">seg</span></div></div>
       </section>
       <section class="panel green" aria-label="Lugar del cumpleaños">
@@ -400,7 +397,7 @@
       <img class="rsvp-star three" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
       <img class="rsvp-star four" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
       <img class="rsvp-star five" src="assets/extras/glitter-star-pink.png" alt="" aria-hidden="true" />
-      <h2 id="rsvpTitle">¿Vienes? ♡</h2>
+      <h2 id="rsvpTitle">♡ ¿Vienes? ♡</h2>
       <p class="rsvp-intro">Dime si te apuntas y qué te gustaría pedir, así puedo organizar todo ♡</p>
       <form id="rsvpForm" novalidate>
         <label class="guest-name" for="guestName">Tu nombre
