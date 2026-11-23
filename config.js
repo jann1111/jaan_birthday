@@ -35,6 +35,9 @@ window.INVITACION = {
   musica: {
     // Cuando adjuntes la canción, guárdala en assets y escribe aquí su ruta.
     archivo: '', // Ejemplo: 'assets/cancion.mp3'
+    // Video oficial de Lana Del Rey. Se carga solamente después de tocar el sobre.
+    youtubeVideoId: 'o_1aF54DO60',
+    titulo: 'Young and Beautiful · Lana Del Rey',
     reproducirAlAbrir: true,
     volumen: 0.35
   },
