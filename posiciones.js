@@ -1,7 +1,13 @@
 /* Posiciones guardadas desde el modo edición (doble clic en editar.command).
    Para volver al diseño original, deja solo: window.POSICIONES = {}; */
 window.POSICIONES = {
-  "movil": {},
+  "movil": {
+    "invitacion:disco-art#1": {
+      "l": 74.2,
+      "t": 1.5,
+      "w": 21.43
+    }
+  },
   "pc": {
     "invitacion:balloons-hearts-art#1": {
       "l": 75.04,
@@ -46,6 +52,60 @@ window.POSICIONES = {
     "invitacion:inv-glitter.three#1": {
       "l": 81.05,
       "t": 83.58
+    },
+    "sobre:intro-deco.intro-disco#1": {
+      "w": 13.21
+    },
+    "sobre:intro-deco.intro-hearts#1": {
+      "l": 84.32,
+      "t": 54.09
+    },
+    "sobre:intro-deco.intro-popper#1": {
+      "l": 2.55,
+      "t": 67.96
+    },
+    "sobre:spark.s1#1": {
+      "l": 14.1,
+      "t": 33.98
+    },
+    "sobre:intro-deco.intro-star.two#1": {
+      "l": 25.18,
+      "t": 18.01
+    },
+    "sobre:intro-deco.intro-bunting-pink#1": {
+      "l": -9.14,
+      "t": -25.08,
+      "r": -5
+    },
+    "copia-mwtxrbz7": {
+      "l": 29.15,
+      "t": 11.28,
+      "w": 2.42,
+      "r": 10
+    },
+    "copia-mwtxsix2": {
+      "l": 32.7,
+      "t": 21.83,
+      "w": 2,
+      "r": 10
+    },
+    "sobre:intro-deco.intro-bunting-green#1": {
+      "l": -12.3,
+      "t": -8.44,
+      "z": 0
+    },
+    "copia-mwtxsxhl": {
+      "l": 34.99,
+      "t": 25.72,
+      "w": 2,
+      "r": 10
     }
-  }
+  },
+  "sinRecorte": true,
+  "copias": {
+    "copia-mwtxrbz7": "sobre:intro-deco.intro-star.two#1",
+    "copia-mwtxsix2": "sobre:intro-deco.intro-star.two#1",
+    "copia-mwtxsxhl": "sobre:intro-deco.intro-star.two#1"
+  },
+  "textos": {}
 };
