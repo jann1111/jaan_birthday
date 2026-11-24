@@ -243,10 +243,10 @@
     .rsvp-star.five{right:33%;top:16px;width:23px;opacity:.34;animation-delay:-3.2s;transform:rotate(21deg)}
     .rsvp-panel h2{font:700 clamp(2.3rem,8vw,3.3rem)/1 "Caveat",cursive;color:var(--wine);margin:0 0 8px}
     .rsvp-intro{margin:0 0 22px;color:#765466;font:500 1.04rem/1.5 "DM Serif Display",Georgia,serif;font-style:italic}
-    .guest-fields{display:grid;gap:12px;max-width:460px;margin:0 auto 20px}
-    .guest-name{display:block;max-width:460px;margin:0;text-align:left;font-size:.78rem;font-weight:700;color:var(--wine)}
+    .guest-name{display:block;max-width:460px;margin:0 auto 20px;text-align:left;font-size:.78rem;font-weight:700;color:var(--wine)}
     .guest-name input{display:block;width:100%;height:50px;margin-top:7px;padding:0 15px;border:1.5px solid rgba(141,35,73,.3);border-radius:14px;background:#fffafc;color:var(--ink);font:500 1rem "DM Sans",sans-serif}
     .guest-name input:focus{outline:3px solid rgba(156,219,47,.48);border-color:var(--wine)}
+    .phone-field{margin-top:14px;margin-bottom:0}
     .field-hint{display:block;margin-top:6px;color:#8b6678;font:italic .78rem/1.35 "DM Serif Display",Georgia,serif}
     .choice-group{margin:0;padding:0;border:0}
     .choice-group legend{width:100%;margin:0 0 11px;font:700 1.4rem/1.1 "Caveat",cursive;color:var(--ink)}
@@ -278,7 +278,7 @@
     .heart-burst{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:100}
     .heart-burst span{position:absolute;bottom:-60px;animation:heart-rise var(--life,3.8s) ease-out forwards;opacity:0;will-change:transform,opacity;filter:drop-shadow(0 3px 5px rgba(141,35,73,.16))}
     @keyframes heart-rise{0%{transform:translate(0,0) rotate(-10deg) scale(.5);opacity:0}12%{opacity:1}90%{opacity:.85}100%{transform:translate(var(--drift,20px),-110vh) rotate(45deg) scale(1.2);opacity:0}}
-    @media(min-width:700px){.main{padding:42px 22px 84px}.dress-code{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:center}.info-grid{grid-template-columns:1fr 1fr}.panel{padding:30px 26px}.guest-fields{grid-template-columns:1fr 1fr}}
+    @media(min-width:700px){.main{padding:42px 22px 84px}.dress-code{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:center}.info-grid{grid-template-columns:1fr 1fr}.panel{padding:30px 26px}}
     @media(max-width:440px){.intro-bunting-green{width:76vw;left:-18%;top:-58px}.intro-bunting-pink{width:53vw;left:-16%;top:-129px}.intro-disco{right:-17px;top:8%;width:94px}.intro-burst{left:-25%;top:31%;width:190px}.intro-balloons{right:-60px;width:175px}.intro-popper{left:-18px;bottom:2px;width:170px}.intro-hearts{right:1%;bottom:12%;width:95px}.intro-star.one{right:12%;top:25%}.intro-star.two{left:7%;top:19%}.invitation{border-radius:24px;padding-top:165px}.bunting-art{width:76%;top:9px}.disco-art{width:27%;right:2%;top:28px}.headline{margin-top:20px}.hero-scene{height:590px}.united-art-wrap{width:96%}.gift-art{right:-7%;width:34%}.balloons-hearts-art{right:-11%;bottom:5%;width:45%}.cake-name{top:79%}.inv-gold.one{left:-80px}.inv-green.one{right:-175px}.party-divider{height:82px}.party-divider .sparkles{width:105px}.party-divider .heartline{width:88px}.dress-code{border-radius:22px;padding:22px 18px}.dress-code-visual{order:-1;transform:rotate(.5deg)}.dress-code-visual img{max-height:360px}.dress-code-star.one{right:14px;top:44%;width:40px}.dress-code-star.two{left:7px;top:48%;width:22px}.dress-code-star.three{right:10px;top:14px;width:48px}.dress-code-star.four{left:8px;bottom:10px;width:27px}.dress-code-star.five{right:17px;bottom:63px;width:19px}.rsvp-panel{border-radius:22px}.choices{gap:8px}.page-star{opacity:.29}.page-hearts{opacity:.18}.page-gold{opacity:.48}}
     @media(max-width:440px){.headline{max-width:345px;margin:0 auto}.hero-scene{height:455px;margin-top:-111px}.hero-scene .join{left:25px;top:27%;width:31%;font-size:1.02rem}.united-art-wrap{left:50%;width:76%}.gift-art{right:-5%;top:7%;width:27%}.balloons-hearts-art{right:-10%;width:36%}.hero-scene+.details-strip{margin-top:30px}}
     @media(max-height:700px){.intro{padding:22px 15px}.sub{margin:8px 0 20px}.envelope-btn{transform:scale(.85);margin:-15px 0}.intro h1{font-size:3.3rem}.tap{margin-top:4px}}
@@ -411,21 +411,19 @@
       <h2 id="rsvpTitle">♡ ¿Vienes? ♡</h2>
       <p class="rsvp-intro">Dime si te apuntas y qué te gustaría pedir, así puedo organizar todo ♡</p>
       <form id="rsvpForm" novalidate>
-        <div class="guest-fields">
-          <label class="guest-name" for="guestName">Tu nombre
-            <input id="guestName" name="guestName" type="text" autocomplete="name" placeholder="Escribe tu nombre" required />
-          </label>
-          <label class="guest-name" for="guestPhone">Tu número de WhatsApp
-            <input id="guestPhone" name="guestPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ej.: 099 123 4567" />
-            <span class="field-hint">Si vienes, lo usaré para agregarte al grupo ♡</span>
-          </label>
-        </div>
+        <label class="guest-name" for="guestName">Tu nombre
+          <input id="guestName" name="guestName" type="text" autocomplete="name" placeholder="Escribe tu nombre" required />
+        </label>
         <fieldset class="choice-group">
           <legend>¿Vas a asistir?</legend>
           <div class="choices">
             <label class="choice"><input type="radio" name="attendance" value="si" /><span>♡ Sí, asistiré</span></label>
             <label class="choice"><input type="radio" name="attendance" value="no" /><span>No podré asistir</span></label>
           </div>
+          <label class="guest-name phone-field" id="phoneField" for="guestPhone" hidden>Tu número de WhatsApp
+            <input id="guestPhone" name="guestPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ej.: 099 123 4567" />
+            <span class="field-hint">Para hacer el grupo ♡</span>
+          </label>
         </fieldset>
         <p class="decline-note" id="declineNote" aria-live="polite" hidden>Bueno, te perdono… pero me debes un cafecito ♡</p>
         <fieldset class="choice-group meal-choice" id="mealChoice" hidden>
@@ -471,11 +469,11 @@
     $('introTitle').textContent=C.sobre.titulo;$('introSubtitle').textContent=C.sobre.subtitulo;$('letterTop').textContent=C.sobre.carta;$('letterBottom').textContent=`${EVENTO.nombre}'s birthday`;$('envelopeSeal').textContent=C.sobre.sello;$('envelopeBow').textContent=C.sobre.lazo;$('tapText').textContent=C.sobre.mensaje;$('signature').textContent=C.sobre.firma||`Con cariño, ${EVENTO.nombre}`;$('cakeName').textContent=EVENTO.nombre;$('venueName').textContent=EVENTO.lugar;$('heroDate').textContent=new Intl.DateTimeFormat('es-EC',{weekday:'long',day:'2-digit',month:'2-digit',year:'numeric',timeZone:'America/Guayaquil'}).format(eventDate).replaceAll('/',' / ').toUpperCase();
     document.querySelectorAll('.spark').forEach((el,i)=>{el.textContent=C.decoracion.stickers[i]||'♡'});if(EVENTO.direccion.trim()){$('venueAddress').textContent=EVENTO.direccion;$('venueAddress').hidden=false}
     const mapBtn=$('mapButton');if(/^https:\/\//i.test(EVENTO.googleMaps.trim())){mapBtn.href=EVENTO.googleMaps;mapBtn.target='_blank';mapBtn.rel='noopener noreferrer';mapBtn.removeAttribute('aria-disabled')}else{mapBtn.classList.add('disabled');mapBtn.addEventListener('click',e=>e.preventDefault())}
-    const rsvpForm=$('rsvpForm');const mealChoice=$('mealChoice');const declineNote=$('declineNote');const brunchCard=$('brunchCard');const menuCard=$('menuCard');const brunchToggle=$('brunchToggle');const brunchIllustration=$('brunchIllustration');const farewellTitle=$('farewellTitle');const farewellDate=$('farewellDate');const rsvpMessage=$('rsvpMessage');const submitButton=rsvpForm.querySelector('.rsvp-submit');let brunchTimer;
+    const rsvpForm=$('rsvpForm');const phoneField=$('phoneField');const mealChoice=$('mealChoice');const declineNote=$('declineNote');const brunchCard=$('brunchCard');const menuCard=$('menuCard');const brunchToggle=$('brunchToggle');const brunchIllustration=$('brunchIllustration');const farewellTitle=$('farewellTitle');const farewellDate=$('farewellDate');const rsvpMessage=$('rsvpMessage');const submitButton=rsvpForm.querySelector('.rsvp-submit');let brunchTimer;
     function setBrunchIllustration(open){clearTimeout(brunchTimer);brunchToggle.setAttribute('aria-expanded',String(open));brunchToggle.textContent=open?'Ocultar lo que incluye ♡':'Ver qué incluye el brunch ♡';brunchIllustration.setAttribute('aria-hidden',String(!open));if(open){brunchIllustration.hidden=false;requestAnimationFrame(()=>brunchIllustration.classList.add('is-open'))}else{brunchIllustration.classList.remove('is-open');const delay=matchMedia('(prefers-reduced-motion: reduce)').matches?0:400;brunchTimer=setTimeout(()=>{if(!brunchIllustration.classList.contains('is-open'))brunchIllustration.hidden=true},delay)}}
     function setFarewell(attendance){if(attendance==='si'){farewellTitle.textContent='¡Yayyy! Nos vemos el sábado ♡';farewellDate.hidden=true;return}if(attendance==='no'){farewellTitle.textContent='Bueno, para la próxima entonces. Tqm ♡';farewellDate.hidden=true;return}farewellTitle.textContent="Can't wait to see you! ♡";farewellDate.textContent='Espero verte el 5 de diciembre. ¡Tqm! 💗';farewellDate.hidden=false}
     brunchToggle.addEventListener('click',()=>setBrunchIllustration(brunchToggle.getAttribute('aria-expanded')!=='true'));
-    rsvpForm.addEventListener('change',event=>{if(event.target.name==='attendance'){const attending=event.target.value==='si';mealChoice.hidden=!attending;declineNote.hidden=attending;setFarewell(event.target.value);if(!attending){rsvpForm.querySelectorAll('input[name="meal"]').forEach(input=>input.checked=false);brunchCard.hidden=true;menuCard.hidden=true;setBrunchIllustration(false)}}if(event.target.name==='meal'){const isBrunch=event.target.value==='Brunch';const isMenu=event.target.value==='Menú';brunchCard.hidden=!isBrunch;menuCard.hidden=!isMenu;if(!isBrunch)setBrunchIllustration(false)}rsvpMessage.textContent=''});
+    rsvpForm.addEventListener('change',event=>{if(event.target.name==='attendance'){const attending=event.target.value==='si';phoneField.hidden=!attending;mealChoice.hidden=!attending;declineNote.hidden=attending;setFarewell(event.target.value);if(!attending){rsvpForm.querySelectorAll('input[name="meal"]').forEach(input=>input.checked=false);brunchCard.hidden=true;menuCard.hidden=true;setBrunchIllustration(false)}}if(event.target.name==='meal'){const isBrunch=event.target.value==='Brunch';const isMenu=event.target.value==='Menú';brunchCard.hidden=!isBrunch;menuCard.hidden=!isMenu;if(!isBrunch)setBrunchIllustration(false)}rsvpMessage.textContent=''});
     function guardarEnSheets(url,datos){return new Promise((resolve,reject)=>{const callback=`__rsvp_${Date.now()}_${Math.random().toString(36).slice(2)}`;const script=document.createElement('script');const limpiar=()=>{clearTimeout(timeout);script.remove();delete window[callback]};const timeout=setTimeout(()=>{limpiar();reject(new Error('Google Sheets no respondió a tiempo.'))},15000);window[callback]=resultado=>{limpiar();if(resultado&&resultado.ok)resolve(resultado);else reject(new Error(resultado?.error||'Google Sheets rechazó la respuesta.'))};script.onerror=()=>{limpiar();reject(new Error('No se pudo conectar con Google Sheets.'))};const parametros=new URLSearchParams({...datos,callback});script.src=`${url}?${parametros}`;document.head.appendChild(script)})}
     rsvpForm.addEventListener('submit',async event=>{
       event.preventDefault();
@@ -498,7 +496,7 @@
         try{
           await guardarEnSheets(sheetUrl,{nombre:guest,telefono:phoneText,asistencia:attendance.value==='si'?'Sí':'No',preferencia:mealText,evento:`Cumpleaños de ${EVENTO.nombre}`,fechaEvento:fechaTexto});
           rsvpMessage.textContent='♡ ¡Gracias por confirmar, no eres falsx, seguimos siendo amigos! ♡';
-          rsvpForm.reset();mealChoice.hidden=true;declineNote.hidden=true;brunchCard.hidden=true;menuCard.hidden=true;setBrunchIllustration(false);setFarewell(null);
+          rsvpForm.reset();phoneField.hidden=true;mealChoice.hidden=true;declineNote.hidden=true;brunchCard.hidden=true;menuCard.hidden=true;setBrunchIllustration(false);setFarewell(null);
         }catch(error){rsvpMessage.textContent='No pudimos guardar la respuesta. Revisa la conexión e inténtalo nuevamente.'}
         finally{submitButton.disabled=false}
         return;
