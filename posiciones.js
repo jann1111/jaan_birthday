@@ -135,14 +135,14 @@ window.POSICIONES = {
       "t": -32.61
     },
     "invitacion:bunting-art#1": {
-      "l": -4.71,
-      "t": 0.19
+      "l": -3.97,
+      "t": -1.08
     },
     "copia-mwvd0zjz": {
-      "l": 76.11,
-      "t": 17.5,
-      "w": 9.54,
-      "r": 10
+      "l": 84.57,
+      "t": -0.88,
+      "w": 7.56,
+      "r": -15
     },
     "copia-mwvd10h9": {
       "l": 79.93,
@@ -163,10 +163,10 @@ window.POSICIONES = {
       "r": -45
     },
     "copia-mwvd26yf": {
-      "l": -4.36,
-      "t": 3.85,
+      "l": -3.85,
+      "t": 1.74,
       "w": 17.08,
-      "r": 0
+      "r": -20
     },
     "copia-mwvd2y5n": {
       "l": 81.47,
@@ -254,6 +254,36 @@ window.POSICIONES = {
     },
     "invitacion:glitter-star-art.one#1": {
       "z": 2
+    },
+    "copia-mwvdrqfc": {
+      "l": 16.19,
+      "t": 0.18,
+      "w": 9,
+      "r": -5
+    },
+    "copia-mwvdsfgs": {
+      "l": 24.09,
+      "t": 4.59,
+      "w": 5.99,
+      "r": 25
+    },
+    "copia-mwvdsl6a": {
+      "l": 26.66,
+      "t": 2.57,
+      "w": 3.55,
+      "r": 25
+    },
+    "copia-mwvdssei": {
+      "l": 33.82,
+      "t": 5.44,
+      "w": 3.55,
+      "r": 25
+    },
+    "copia-mwvdud10": {
+      "l": 27.06,
+      "t": 24.47,
+      "w": 2.81,
+      "r": -55
     }
   },
   "pc": {
@@ -455,7 +485,53 @@ window.POSICIONES = {
       "t": 11.28,
       "w": 2.42,
       "r": 10
-    }
+    },
+      "invitacion:bunting-art#1": {
+        "l": -3.97,
+        "t": -1.08
+      },
+      "copia-mwvd0zjz": {
+        "l": 88,
+        "t": 1,
+        "w": 6,
+        "r": -15
+      },
+      "copia-mwvd26yf": {
+        "l": -2.5,
+        "t": 2.2,
+        "w": 12,
+        "r": -20
+      },
+      "copia-mwvdrqfc": {
+        "l": 15,
+        "t": 1,
+        "w": 7,
+        "r": -5
+      },
+      "copia-mwvdsfgs": {
+        "l": 23,
+        "t": 4.6,
+        "w": 4.5,
+        "r": 25
+      },
+      "copia-mwvdsl6a": {
+        "l": 27,
+        "t": 2,
+        "w": 2.8,
+        "r": 25
+      },
+      "copia-mwvdssei": {
+        "l": 33,
+        "t": 5.6,
+        "w": 2.8,
+        "r": 25
+      },
+      "copia-mwvdud10": {
+        "l": 15,
+        "t": 23,
+        "w": 2.4,
+        "r": -55
+      }
   },
   "sinRecorte": true,
   "copias": {
@@ -492,7 +568,12 @@ window.POSICIONES = {
     "copia-mwvd81kw": "invitacion:inv-glitter.three#1",
     "copia-mwvd9yxp": "invitacion:inv-glitter.three#1",
     "copia-mwvda9c9": "invitacion:inv-glitter.three#1",
-    "copia-mwvdbkm1": "sobre:intro-deco.intro-star.two#1"
+    "copia-mwvdbkm1": "sobre:intro-deco.intro-star.two#1",
+    "copia-mwvdrqfc": "invitacion:inv-glitter.three#1",
+    "copia-mwvdsfgs": "invitacion:inv-glitter.three#1",
+    "copia-mwvdsl6a": "invitacion:inv-glitter.three#1",
+    "copia-mwvdssei": "invitacion:inv-glitter.three#1",
+    "copia-mwvdud10": "invitacion:inv-glitter.three#1"
   },
   "textos": {}
 };

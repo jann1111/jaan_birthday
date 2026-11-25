@@ -526,7 +526,7 @@
         submitButton.disabled=true;rsvpMessage.textContent='Guardando tu confirmación…';
         try{
           await guardarEnSheets(sheetUrl,{nombre:guest,telefono:phoneText,asistencia:attendance.value==='si'?'Sí':'No',preferencia:mealText,evento:`Cumpleaños de ${EVENTO.nombre}`,fechaEvento:fechaTexto});
-          rsvpMessage.textContent='♡ ¡Gracias por confirmar, no eres falsx, seguimos siendo amigos! ♡';
+          rsvpMessage.textContent='♡ ¡Yayyy, seguimos siendo amigos jajsjaja! ♡';
           rsvpForm.reset();mealChoice.hidden=true;declineNote.hidden=true;brunchCard.hidden=true;menuCard.hidden=true;setBrunchIllustration(false);setFarewell(null);
         }catch(error){rsvpMessage.textContent='No pudimos guardar la respuesta. Revisa la conexión e inténtalo nuevamente.'}
         finally{submitButton.disabled=false}
